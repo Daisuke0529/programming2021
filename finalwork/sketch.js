@@ -6,8 +6,8 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
-  fill(255);
-  ellipse(width/2,height/2,30,30);
+  fill(0);
+  ellipse(width/2,height/2,100,100);
 }
 
 function windowResized(){
