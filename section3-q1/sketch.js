@@ -5,12 +5,18 @@ let cycle;
 function setup(){
   createCanvas(200, 200);
   count = 0;
-  cycle = 100;
+  cycle = 50;
+  v=1
 }
 
 function draw(){
   background(160, 192, 255);
-  count = (count + 1) % cycle;
-  // BLANK[1]
-  ellipse(width / 2, height / 2, size);
+  ellipse(width / 2, height / 2, cycle+count);
+  count=count+v;
+  if(count>50||count<0){
+    v=v*(-1);  
+  }
 }
+function mousePressed(){v=v*2;}
+function mouseReleased(){v=v/2;}
+  
