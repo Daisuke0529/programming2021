@@ -700,12 +700,12 @@ function draw() {
     strokeWeight(3);
     ellipse(x0,y0,15);
     //球速変更
-    if(pit1==0){p1=100;}
-    if(pit1==1){p1=80;}
-    if(pit1==2){p1=60;}
-    if(pit2==0){p2=100;}
-    if(pit2==1){p2=80;}
-    if(pit2==2){p2=60;}
+    if(pit1==0){p1=75;}
+    if(pit1==1){p1=55;}
+    if(pit1==2){p1=35;}
+    if(pit2==0){p2=75;}
+    if(pit2==1){p2=55;}
+    if(pit2==2){p2=35;}
     if(count==0&&keyIsDown("A".charCodeAt(0))){
       kx=random(-50,50);
       ky=random(10,150);
